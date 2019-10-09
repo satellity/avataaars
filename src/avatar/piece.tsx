@@ -4,6 +4,9 @@ import Clothe from './clothes'
 import Graphics from './clothes/Graphics'
 import Accessories from './top/accessories'
 import FacialHair from './top/facialHair'
+import FacialHairColor from './top/facialHair/Colors'
+import HairColor from './top/HairColor'
+import HatColor from './top/HatColor'
 import Top from './top'
 
 import Eyes from './face/eyes'
@@ -47,6 +50,9 @@ export default class PieceComponent extends React.Component<Props> {
         {this.props.pieceType === 'mouth' && <Mouth />}
         {this.props.pieceType === 'nose' && <Nose />}
         {this.props.pieceType === 'skin' && <Skin maskID="5678" />}
+        {this.props.pieceType === 'hairColor' && <HairColor maskID="2345" />}
+        {this.props.pieceType === 'hatColor' && <HatColor maskID="3456" />}
+        {this.props.pieceType === 'facialHairColor' && <FacialHairColor maskID="4567" />}
       </svg>
     )
   }
