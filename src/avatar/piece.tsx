@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import Clothe from './clothes'
 import Graphics from './clothes/Graphics'
+import ClotheColor from './clothes/Colors'
 import Accessories from './top/accessories'
 import FacialHair from './top/facialHair'
 import FacialHairColor from './top/facialHair/Colors'
@@ -53,6 +54,7 @@ export default class PieceComponent extends React.Component<Props> {
         {this.props.pieceType === 'hairColor' && <HairColor maskID="2345" />}
         {this.props.pieceType === 'hatColor' && <HatColor maskID="3456" />}
         {this.props.pieceType === 'facialHairColor' && <FacialHairColor maskID="4567" />}
+        {this.props.pieceType === 'clotheColor' && <ClotheColor maskID="6789" />}
       </svg>
     )
   }
