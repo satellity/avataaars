@@ -39,11 +39,11 @@ export default class AvatarComponent extends React.Component<Props> {
     return { optionContext: this.optionContext }
   }
 
-  componentWillMount () {
+  componentDidMount () {
     this.updateOptionContext(this.props)
   }
 
-  componentWillReceiveProps (nextProps: Props) {
+  componentDidUpdate (nextProps: Props) {
     this.updateOptionContext(nextProps)
   }
 
@@ -75,11 +75,11 @@ export class Piece extends React.Component<Props> {
     return { optionContext: this.optionContext }
   }
 
-  componentWillMount () {
+  componentDiDMount () {
     this.updateOptionContext(this.props)
   }
 
-  componentWillReceiveProps (nextProps: Props) {
+  componentDidUpdate (nextProps: Props) {
     this.updateOptionContext(nextProps)
   }
 
