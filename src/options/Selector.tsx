@@ -42,8 +42,8 @@ export default class Selector extends React.Component<Props> {
     }
   }
 
-  componentDidUpdate (nextProps: Props & { children?: React.ReactNode }) {
-    this.updateOptionValues(nextProps)
+  componentDidUpdate () {
+    this.updateOptionValues(this.props)
   }
 
   componentWillUnmount () {

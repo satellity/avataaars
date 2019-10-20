@@ -38,8 +38,8 @@ var AvatarComponent = /** @class */ (function (_super) {
     AvatarComponent.prototype.componentDidMount = function () {
         this.updateOptionContext(this.props);
     };
-    AvatarComponent.prototype.componentDidUpdate = function (nextProps) {
-        this.updateOptionContext(nextProps);
+    AvatarComponent.prototype.componentDidUpdate = function () {
+        this.updateOptionContext(this.props);
     };
     AvatarComponent.prototype.render = function () {
         var _a = this.props, avatarStyle = _a.avatarStyle, style = _a.style;
@@ -73,11 +73,11 @@ var Piece = /** @class */ (function (_super) {
     Piece.prototype.getChildContext = function () {
         return { optionContext: this.optionContext };
     };
-    Piece.prototype.componentDiDMount = function () {
+    Piece.prototype.componentDidMount = function () {
         this.updateOptionContext(this.props);
     };
-    Piece.prototype.componentDidUpdate = function (nextProps) {
-        this.updateOptionContext(nextProps);
+    Piece.prototype.componentDidUpdate = function () {
+        this.updateOptionContext(this.props);
     };
     Piece.prototype.render = function () {
         var _a = this.props, avatarStyle = _a.avatarStyle, style = _a.style, pieceType = _a.pieceType, pieceSize = _a.pieceSize, viewBox = _a.viewBox;

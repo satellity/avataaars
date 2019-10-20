@@ -7,7 +7,7 @@ import { OptionContext, allOptions } from './options'
 export { default as Avatar, AvatarStyle } from './avatar'
 export { Option, OptionContext, allOptions } from './options'
 
-import {default as PieceComponent} from './avatar/piece';
+import { default as PieceComponent } from './avatar/piece'
 
 export interface Props {
   avatarStyle: string
@@ -24,9 +24,9 @@ export interface Props {
   eyebrowType?: string
   mouthType?: string
   skinColor?: string
-  pieceType?:string
-  pieceSize?:string
-  viewBox?:string
+  pieceType?: string
+  pieceSize?: string
+  viewBox?: string
 }
 
 export default class AvatarComponent extends React.Component<Props> {
@@ -43,8 +43,8 @@ export default class AvatarComponent extends React.Component<Props> {
     this.updateOptionContext(this.props)
   }
 
-  componentDidUpdate (nextProps: Props) {
-    this.updateOptionContext(nextProps)
+  componentDidUpdate () {
+    this.updateOptionContext(this.props)
   }
 
   render () {
@@ -75,12 +75,12 @@ export class Piece extends React.Component<Props> {
     return { optionContext: this.optionContext }
   }
 
-  componentDiDMount () {
+  componentDidMount () {
     this.updateOptionContext(this.props)
   }
 
-  componentDidUpdate (nextProps: Props) {
-    this.updateOptionContext(nextProps)
+  componentDidUpdate () {
+    this.updateOptionContext(this.props)
   }
 
   render () {

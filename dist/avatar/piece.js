@@ -39,22 +39,21 @@ var PieceComponent = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     PieceComponent.prototype.render = function () {
-        return (React.createElement("svg", { style: this.props.style, width: this.props.pieceSize + "px", height: this.props.pieceSize + "px", viewBox: this.props.viewBox || "0 0 264 280", version: "1.1", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink" },
+        return (React.createElement("svg", { style: this.props.style, width: this.props.pieceSize + "px", height: this.props.pieceSize + "px", viewBox: this.props.viewBox || '0 0 264 280', version: '1.1', xmlns: 'http://www.w3.org/2000/svg', xmlnsXlink: 'http://www.w3.org/1999/xlink' },
             this.props.pieceType === 'top' && React.createElement(top_1.default, null),
             this.props.pieceType === 'clothe' && React.createElement(clothes_1.default, null),
-            this.props.pieceType === 'graphics' && React.createElement(Graphics_1.default, { maskID: "1234" }),
-            (this.props.pieceType === 'accessories' ||
-                this.props.pieceType === 'accesories') && React.createElement(accessories_1.default, null),
+            this.props.pieceType === 'graphics' && React.createElement(Graphics_1.default, { maskID: '1234' }),
+            this.props.pieceType === 'accessories' && React.createElement(accessories_1.default, null),
             this.props.pieceType === 'facialHair' && React.createElement(facialHair_1.default, null),
             this.props.pieceType === 'eyes' && React.createElement(eyes_1.default, null),
             this.props.pieceType === 'eyebrows' && React.createElement(eyebrow_1.default, null),
             this.props.pieceType === 'mouth' && React.createElement(mouth_1.default, null),
             this.props.pieceType === 'nose' && React.createElement(nose_1.default, null),
-            this.props.pieceType === 'skin' && React.createElement(Skin_1.default, { maskID: "5678" }),
-            this.props.pieceType === 'hairColor' && React.createElement(HairColor_1.default, { maskID: "2345" }),
-            this.props.pieceType === 'hatColor' && React.createElement(HatColor_1.default, { maskID: "3456" }),
-            this.props.pieceType === 'facialHairColor' && React.createElement(Colors_2.default, { maskID: "4567" }),
-            this.props.pieceType === 'clotheColor' && React.createElement(Colors_1.default, { maskID: "6789" })));
+            this.props.pieceType === 'skin' && React.createElement(Skin_1.default, { maskID: '5678' }),
+            this.props.pieceType === 'hairColor' && React.createElement(HairColor_1.default, { maskID: '2345' }),
+            this.props.pieceType === 'hatColor' && React.createElement(HatColor_1.default, { maskID: '3456' }),
+            this.props.pieceType === 'facialHairColor' && React.createElement(Colors_2.default, { maskID: '4567' }),
+            this.props.pieceType === 'clotheColor' && React.createElement(Colors_1.default, { maskID: '6789' })));
     };
     return PieceComponent;
 }(React.Component));
